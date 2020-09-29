@@ -76,7 +76,7 @@ Debes de cerrarlo y volverlo a abrir. Si todo está bien nos mostrará la versi�
 mvn clean install
 ```
 
-## API expuesta por Swaggwe2
+## API expuesta por Swagger2
 
 http://127.0.0.1:8080/swagger-ui.html
 
