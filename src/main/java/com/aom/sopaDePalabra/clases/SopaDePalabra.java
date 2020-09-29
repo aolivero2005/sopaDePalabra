@@ -85,7 +85,7 @@ public class SopaDePalabra {
      */
     public int cantidadDePalabras(SopaDePalabra sopa){
         Integer cantLetrasDeSopa = sopa.getAlto() * sopa.getAncho();
-        Integer cantPalagras = cantLetrasDeSopa*2/25;
+        Integer cantPalagras = cantLetrasDeSopa/25;
         return cantPalagras;
     }
 
@@ -1258,7 +1258,7 @@ public class SopaDePalabra {
                 }
             }while(cabePalabra == false);
         }
-        this.rellenarPalabrasEnPosicionesVacias(sopa);
+        //this.rellenarPalabrasEnPosicionesVacias(sopa);
         return sopa;
     }
 }

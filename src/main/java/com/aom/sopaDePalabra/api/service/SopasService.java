@@ -76,6 +76,20 @@ public class SopasService {
         return listPalabras;
     }
 
+    public String visualizarSopa(String id){
+
+        String sopaString = "";
+        SopaDePalabra sopa = this.sopas.getSopaById(id);
+        ArrayList<ArrayList<String>> sopaLetras = sopa.getSopa();
+        for ( ArrayList<String> list : sopaLetras){
+            for (String letra: list){
+                sopaString += letra + " ";
+            }
+            sopaString += "\n";
+        }
+        return sopaString;
+    }
+
     public String indicarEncontrarPalabra(String id, CordenadasRequestDto coordenadas) throws Exception{
         return this.sopas.indicarEncontrarPalabra(id, coordenadas);
     }

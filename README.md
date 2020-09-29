@@ -24,6 +24,7 @@ IZQUIERDA-DERECHA, DERECHA-IZQUIERDA, ARRIBA-ABAJO, ABAJO-ARRIBA Y DIAGONAL (acl
 contempla los cuatro sentidos)
 
 *   Se pueden listar las sopas creadas
+*   Se puede visualizar la matriz de una sopa de letras
 *   Se puede listar las palaras que se encuentran en una sopa
 *   Se puede indicar mediante coordenadas inicial y final (siempre empezando por 0) que se ha encontrado
 una palabra

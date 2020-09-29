@@ -56,13 +56,24 @@ public class SopasController {
         return new ResponseEntity<List<PalabrasEnSopaResponseDto>>(listResponse, HttpStatus.CREATED);
     }
 
-    @GetMapping("/view/{id}")
+    @GetMapping("/palabras-encontradas/{id}")
     @ApiOperation(value = "Visualiza palabras encontradas en una sopa", notes = "Se listan las palabras que se se hayan encontrado en una sopa.")
     public ResponseEntity<?> visualizarPalabrasEncontradas(@PathVariable String id) throws Exception{
 
         List<PalabrasEncontradasResponseDto> listResponse = this.sopasService.getLIstaDePalabrasEncontradas(id);
         return new ResponseEntity<List<PalabrasEncontradasResponseDto>>(listResponse, HttpStatus.CREATED);
     }
+
+    @GetMapping("/view/{id}")
+    @ApiOperation(value = "Visualiza una sopa de letras", notes = "Se visualiza una sopa de letras.")
+    public ResponseEntity visualizarSopa(@PathVariable String id) throws Exception{
+
+        String sopa = this.sopasService.visualizarSopa(id);
+        //return new ResponseEntity<List<PalabrasEncontradasResponseDto>>(listResponse, HttpStatus.CREATED);
+        return ok(sopa);
+    }
+
+
 
     @PutMapping("/{id}")
     @ApiOperation(value = "Especificar coordenadas de una palabra", notes = "Se especifican las coordenadas inicial y final de una palabra encontrada.")

@@ -95,4 +95,11 @@ public class Sopas {
         }
         return "Palabra no encontrada";
     }
+
+    public SopaDePalabra getSopaById(String id){
+        List<SopaDePalabra> list = this.getListSopas();
+
+        return list.stream().filter(s -> s.getId().equals(id))
+                            .findFirst().orElse(null);
+    }
 }
