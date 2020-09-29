@@ -1258,7 +1258,7 @@ public class SopaDePalabra {
                 }
             }while(cabePalabra == false);
         }
-        //this.rellenarPalabrasEnPosicionesVacias(sopa);
+        this.rellenarPalabrasEnPosicionesVacias(sopa);
         return sopa;
     }
 }
