@@ -11,7 +11,8 @@ del ejemplo.
 Aclarar que el ejemplo no persiste las sopas en ningún tipo de medio de almacenamiento, ya que no es el 
 objetivo del mismo. Simplemente es almacenada temporalmente en memoria durante la ejecución del código.
 
-##Funcionamiento
+
+## Funcionamiento
 Desde la API se acceden a diferentes EndPoint para la creación y gestión de las sopas de palabras.
 (Más adelante en la Interfaz de Swager2 se detallan los mismos).
 
@@ -27,7 +28,7 @@ una palabra
 *   Se puede listar las palabras encontradas en una sopa
 *   Se chequea que las coordenadas entradas por el usuario sean una coordenada válida y dentro de la sopa
 
-##Marco
+## Marco
 Para el desarrollo del ejemplo se seleccionó Spring boot (2.2.0) y se utilizó Swagger2 (2.9.2) para la 
 documentación de la API.
 
@@ -65,12 +66,12 @@ en C:/maven/apache-maven-3.3.9 (en mi caso esta en otro directorio)
 cuando cambiaste las variables de sesión, porque entonces no reconocerá estas variables. 
 Debes de cerrarlo y volverlo a abrir. Si todo está bien nos mostrará la versión de Maven instalada)
 
-##Ejemplos de variables de entorno
+## Ejemplos de variables de entorno
 <div style="text-align: center; margin: 20px; width: 100%">
     <img style="width:350px" src="./src/main/resources/static/img/variables-entorno.png" alt="Variables de entorno"> 
 </div>
 
-##Instalación de dependencias
+## Instalación de dependencias
 ```
 mvn clean install
 ```
