@@ -11,6 +11,8 @@ del ejemplo.
 Aclarar que el ejemplo no persiste las sopas en ningún tipo de medio de almacenamiento, ya que no es el 
 objetivo del mismo. Simplemente es almacenada temporalmente en memoria durante la ejecución del código.
 
+*   Nota: En el desarrollo de este ejemplo se utilizó Lombok una solución que nos permite evitar tener que escribir
+una y otra vez ese código repetitivo (Getters y Setters).
 
 ## Funcionamiento
 Desde la API se acceden a diferentes EndPoint para la creación y gestión de las sopas de palabras.
@@ -65,6 +67,16 @@ en C:/maven/apache-maven-3.3.9 (en mi caso esta en otro directorio)
 (Aseguraos de que el terminal no estaba abierto 
 cuando cambiaste las variables de sesión, porque entonces no reconocerá estas variables. 
 Debes de cerrarlo y volverlo a abrir. Si todo está bien nos mostrará la versión de Maven instalada)
+
+
+*   Instalando Lombok
+Desde la web del proyecto Lombok (https://projectlombok.org/download) se puede descargar un jar, que debería 
+poder instalarse con un simple doble click. En el caso de que esto no funcionara habría que recurrir a la línea 
+de comandos y ejecutar:
+
+```
+java -jar lombok.jar
+```
 
 ## Ejemplos de variables de entorno
 <div style="text-align: center; margin: 20px; width: 100%">
