@@ -1170,7 +1170,7 @@ public class SopaDePalabra {
     /**
      * Chequea que Y sea valida
      * @param sopa {@link SopaDePalabra}
-     * @param x {@link SopaDePalabra}
+     * @param y {@link SopaDePalabra}
      * @return {@link Boolean}
      */
     public boolean isYValida(SopaDePalabra sopa, Integer y){
