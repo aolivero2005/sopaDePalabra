@@ -70,6 +70,7 @@ Debes de cerrarlo y volverlo a abrir. Si todo está bien nos mostrará la versi�
 
 
 *   Instalando Lombok
+
 Desde la web del proyecto Lombok (https://projectlombok.org/download) se puede descargar un jar, que debería 
 poder instalarse con un simple doble click. En el caso de que esto no funcionara habría que recurrir a la línea 
 de comandos y ejecutar:
